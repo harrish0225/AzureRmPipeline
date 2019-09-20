@@ -6,6 +6,9 @@
 trigger:
 - master
 
+pool:
+  vmImage: 'ubuntu-latest'
+
 steps:
 - task: AzureResourceGroupDeployment@2
   inputs:
