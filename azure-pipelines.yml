@@ -12,7 +12,7 @@ pool:
 steps:
 - task: AzureResourceGroupDeployment@2
   inputs:
-    azureSubscription: 'AzureRmPipeline-China'
+    azureSubscription: 'AzureChinaManagedIdentityService'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'chenyedevopsrg'
     location: 'China North'
