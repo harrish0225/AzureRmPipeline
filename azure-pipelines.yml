@@ -10,12 +10,14 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: AzureResourceGroupDeployment@2
+- task: AzureResourceManagerTemplateDeployment@3
   inputs:
-    azureSubscription: 'AzureChinaManagedIdentityService'
+    deploymentScope: 'Resource Group'
+    ConnectedServiceName: 'AzureChinaConn'
+    subscriptionName: 'b353ef9b-de33-44fe-91ed-fddf7101f2fd'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'chenyedevopsrg'
-    location: 'China North'
+    resourceGroupName: 'chenyepiperg'
+    location: 'China East'
     templateLocation: 'Linked artifact'
     csmFile: 'CreateAzureStorage/azuredeploy.json'
     deploymentMode: 'Incremental'
