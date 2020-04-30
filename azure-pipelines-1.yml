@@ -19,6 +19,6 @@ steps:
     resourceGroupName: 'chenyerg'
     location: 'China North 2'
     templateLocation: 'Linked artifact'
-    overrideParameters: '-projectName RockboyforAzRmPipleline -linkedTemplateUri https://github.com/rockboyfor/AzureRmPipeline/blob/master/CreateAzureStorage/linkedStorageAccount.json'
+    overrideParameters: '-projectName RockboyforAzRmPipleline -linkedTemplateUri https://raw.githubusercontent.com/rockboyfor/AzureRmPipeline/master/CreateAzureStorage/linkedStorageAccount.json'
     deploymentMode: 'Incremental'
     deploymentName: 'chenyetestdeployment'
